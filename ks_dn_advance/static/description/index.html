@@ -1,0 +1,2843 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Odoo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<!-- odoo description page css -->
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6 {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        line-height: 1.1;
+        color: #21272b;
+    }
+
+    ul {
+        color: #222020;
+    }
+
+    * {
+        font-family: "Montserrat", sans-serif;
+    }
+
+</style>
+
+<body>
+<!-- Use Odd and even section for repeating sections (on line no. 224 and 275)
+    and ask sukhjinder singh to fix down arrow image on last section
+-->
+<!-- Header -->
+<div class="row justify-content-md-between justify-content-center border-bottom align-items-center py-2 mx-0">
+    <div class="text-center mr-lg-5 mb-3 mb-lg-0">
+        <a class="btn p-2">
+            <img src="images/Ksolves_logo.png" alt="ksolves-logo" style="height:50px">
+        </a>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center py-2">
+        <div class="text-center">
+            <a href="https://apps.odoo.com/apps/modules/browse?search=ksolves" target="_blank" class="btn btn-sm mb-2 mb-lg-0"
+                  style="font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038;color:#fff;"><i
+                    class="fa fa-list-alt mr-1"></i> <span class="d-none d-sm-inline">Ksolves</span> All Apps</a>
+        </div>
+    </div>
+    <div class="mt-md-0 mt-4 mb-3 mb-lg-0">
+        <span class="btn btn-sm mb-2 mb-lg-0"
+           style="font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038;color:#fff;"><i
+                class="fa fa-check"></i> Community</span>
+        <span class="btn btn-sm mb-2 mb-lg-0"
+           style="font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038;color:#fff;"><i
+                class="fa fa-check"></i> Enterprise</span>
+        <span class="btn btn-sm mb-2 mb-lg-0"
+           style="font-size: 13px;font-size: 14px; font-weight: 500;background-color: #203038;color:#fff;"><i
+                class="fa fa-check"></i> Odoo.sh</span>
+    </div>
+</div>
+<div id="loempia_tabs" class="container py-5 oe_styling_v8"
+     style="color: #0b3b52;font-family: 'Open sans','sans-serif';">
+    <div class="row mb-5">
+        <div class="col-12 col-md-12 text-center text-md-left">
+            <h1 style="color: #203038;"><span></span><center><b><u>Dashboard Ninja Advance</u></b></center>
+            </h1>
+        </div>
+    </div>
+    <div class="row align-items-center mb-4">
+        <div class="col-12 col-md-12">
+            <h2 class="pr-md-5 mb-4" style="font-size: 20px;color: #3c3c3c;">Ksolves <b><u> Dashboard Ninja Advance</u></b> opens up the limitless possibilities
+                for you to present your complex data in form of Charts or list view on Dashboards with awesome
+                query feature of Dashboard Ninja.
+                This app facilitates you to view the Dashboard Items in full Screen with Slider
+            </h2><br/>
+            <h4 class="font-weight-bold mb-3" style="font-size: 35px; text-align:left"><span style="color:#E13B34;">Hot</span> Features
+            </h4>
+            <div class="col-12 col-md-12 pl-0">
+                <ul class="list-unstyled" style="font-size:16px;color: #4f4f4f;">
+                    <li class="mb-2 d-flex">
+                        <div><i class="fa fa-free-code-camp mt-1" style="font-size:18px;color:#E13B34;"></i></div>
+                        <span style="font-size:18px"
+                              class="font-weight-bold ml-2"><b> Layouts</b> - New layouts added for List view</span>
+                    </li>
+                    <li class="mb-2 d-flex">
+                        <div><i class="fa fa-free-code-camp mt-1" style="font-size:18px;color:#E13B34;"></i></div>
+                        <span style="font-size:18px"
+                              class="font-weight-bold ml-2"><b> TV Mode</b> - Items presentation with slide show view </span>
+                    </li>
+                    <li class="mb-2 d-flex">
+                        <div><i class="fa fa-free-code-camp mt-1" style="font-size:18px;color:#E13B34;"></i></div>
+                        <span style="font-size:18px"
+                              class="font-weight-bold ml-2"><b> Query feature</b> - Now user can write Sql query by its own to fetch records from Data Base</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br/>
+    </div>
+    <!-- <hr> -->
+    <div class="row mb-4 justify-content-center my-4 mb-md-5">
+        <div class="col-12 col-md-5 text-center mb-4 mb-md-0">
+            <span class="btn py-3 px-5"
+                  style="font-size: 20px; font-weight: 600;background-color: #203038;color:#fff;">DEMO AVAILABLE</span>
+        </div>
+        <div class="col-12 col-md-5 text-center text-md-right">
+            <span class="btn py-3 px-5"
+                  style="font-size: 20px; font-weight: 600;background-color: #203038;color:#fff;">FREE 90 DAYS SUPPORT</span>
+        </div>
+    </div>
+    <!-- tab view start -->
+    <div>
+        <div class="justify-content-center d-flex">
+            <!-- Nav pills -->
+            <ul class="nav o_tab_nav"
+                style="border: 1px solid #203038;  border-radius: 6px 6px;overflow:hidden;background-color:transparent">
+                <li class="nav-item">
+                    <a class="nav-link active px-md-4 list-group-item-beta-dark list-group-item-action" data-toggle="pill"
+                       href="#Screenshot"
+                       style="border-radius: 0px; border-right: 1px solid #203038;opacity: 1;padding:16px;">FEATURES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-md-4 list-group-item-beta-dark list-group-item-action" data-toggle="pill"
+                       href="#Userguide"
+                       style="border-radius: 0px; border-right: 1px solid #203038;opacity: 1;padding:16px;">USER GUIDE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-md-4 list-group-item-beta-dark list-group-item-action" data-toggle="pill"
+                       href="#Release"
+                       style="border-radius: 0px; border-right: 1px solid #203038;opacity: 1;padding:16px;">RELEASES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-md-4 list-group-item-beta-dark list-group-item-action" data-toggle="pill"
+                       href="#FAQ" style="border-radius: 0px;opacity: 1;padding:16px;">FAQ's</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content py-5">
+            <div class="tab-pane active" id="Screenshot">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <ul class="nav o_tab_nav"
+                            style="font-size: 18px; border-radius: 6px 6px;background-color: transparent">
+                            <li class="nav-item w-100 mb-3">
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#TvAdvance1"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform:  capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-television mr-2" style="font-size: 20px;"></i>TV Mode</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#LVLAdvance2"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform:  capitalize;transition: 0.3s ease-in-out;">
+                                    <i class="fa fa-list mr-2" style=" font-size: 20px;"></i>List View Layouts</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#FAdvance3"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform:  capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-bar-chart mr-2" style="font-size: 20px;"></i>Bar Chart with Query</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#FAdvance4"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform:  capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="fa fa-list mr-2" style="font-size: 20px;"></i>List View with Query</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-8 pt-4 pt-md-0">
+                        <div class="tab-content h-100">
+                            <div class="tab-pane active" id="TvAdvance1">
+                                <h4>TV Mode</h4>
+                                <div class="px-1 px-sm-2 px-md-3 px-lg-3 py-4 mb-3" style="color: #fff;">
+                                    <div class="tab-pane h-100 active">
+                                        <img alt="Tv-Dashboard" src="preview_images/img/Tvmode.png"
+                                             style="max-width:100%;" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="LVLAdvance2">
+                                <h4>List View Layouts</h4>
+                                <div class="px-1 px-sm-2 px-md-3 px-lg-3 py-4 mb-3" style="color: #fff;">
+                                    <div class="tab-pane h-100 active">
+                                        <img alt="List-View-Layout"
+                                             src="preview_images/img/ListViewLayout.png"
+                                             style="max-width:100%;" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="FAdvance3">
+                                <h4>Bar Chart with Query</h4>
+                                <div class="px-1 px-sm-2 px-md-3 px-lg-3 py-4 mb-3" style="color: #fff;">
+                                    <div class="tab-pane h-100 active">
+                                        <img alt="Bar-Chart" src="preview_images/img/querybarchart.png"
+                                             style="max-width:100%;" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="FAdvance4">
+                                <h4>List View with Query</h4>
+                                <div class="px-1 px-sm-2 px-md-3 px-lg-3 py-4 mb-3" style="color: #fff;">
+                                    <div class="tab-pane h-100 active">
+                                        <img alt="List-View" src="preview_images/img/querylistView.jpg"
+                                             style="max-width:100%;" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="Userguide">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <ul class="nav o_tab_nav"
+                            style="text-transform: capitalize; font-size: 18px; border-radius: 6px 6px;background-color: transparent">
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action active"
+                                   data-toggle="pill" href="#Advance21"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Installation</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance16"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Odoo.Sh Installation Steps</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance1"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Add an Item</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance2"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Tile</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance3"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Bar Chart</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance4"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;">
+                                    <i class="mr-2" style=" font-size: 20px;"></i>
+                                    Horizontal Bar Chart</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance5"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Line Chart </a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance6"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Area Chart </a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance7"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Pie Chart</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance8"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Doughnut Chart</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance9"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Polar Area Chart</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance11"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>List View</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance12"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>KPI</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance13"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Additional Features</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance14"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;"><i
+                                        class="mr-2" style="font-size: 20px;"></i>Configurations</a>
+                            </li>
+                            <li class="nav-item w-100 mb-3">
+                                <a class="nav-link d-flex align-items-center px-3 py-2 list-group-item-beta-dark list-group-item-action"
+                                   data-toggle="pill" href="#Advance15"
+                                   style="border-radius:30px; border: 1px solid #203038;opacity:1;letter-spacing: inherit;text-transform: capitalize;transition: 0.3s ease-in-out;">
+                                    <i class=" mr-2" style="font-size: 20px;"></i>
+                                    Dashboard Ninja Advance
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-8 pt-4 pt-md-0">
+                        <div class="tab-content h-100">
+                            <div class="tab-pane active" id="Advance21">
+                                <h4>Installation</h4>
+                                <div class="pb-4" style="font-size: 18px;">Once you have downloaded the Dashboard Ninja Advance app from the Odoo app store, you will get a folder name “ks_dn_advance”.
+                                </div>
+                                <p>1. Copy and paste it to your Add-ons folder.</p>
+                                <p>2. Click on Update Apps list from the menu and now Dashboard Ninja Advance will appear in App list.</p>
+                                <p>3.  Go to Apps menu, search for 'dashboard ninja advance' and click Install button.</p>
+                                <p>4. You are ready for use Dashboard Ninja Advance. </p>
+                            </div>
+                            <div class="tab-pane" id="Advance1">
+                                <h4>Add a Dashboard Item</h4>
+                                <div class="pb-4" style="font-size: 18px;">Click on the Add Button on the top right corner of your Dashboard screen. Once you click on the button, you will be asked to select the Dashboard Item Type. There are 10 item types being provided by Dashboard Ninja.
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/dashboard_action.png"  alt="add-item" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Advance2">
+
+                               <h4>Creating a Dashboard Item as a Tile:</h4>
+
+                                <p>If you select the Dashboard Item Type as a Tile, pop screen or a dashboard item creation window appears which asks you to fill a number of fields. The ones highlighted in purple are mandatory to fill,
+                                    model field is the important one in order to save the dashboard item. Once the Model is selected, you will notice two configurations further namely Data and Display.
+                                    Data tab will allow users to add/select the data for which they wish to display, whereas Display tab will allow a user to configure the dashboard item on the basis of its color, layout etc.</p>
+
+                                <div class="pb-1">
+                                    <img src="assets/images/sale_order.png"  alt="tile-item" class="img-fluid">
+                                </div>
+                                <br><br>
+                                <p>Once the Model is selected, you can define the Domain for the dashboard item if you wish to do the same. For Example: If your selected Model is Sale Order, you can define the Domain as Sale Order where the total amount is greater than 100.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/domain.png"  alt="domain" class="img-fluid">
+                                </div>
+                                <br><br>
+                                <div class="pb-4" style="font-size: 18px;">
+                                    <p>Once you click on the “Display” tab, you will notice the following configuration options</p>
+                                    <li> Layout</li>
+                                    <li> Theme</li>
+                                    <li> Background Color</li>
+                                    <li> Font Color</li>
+                                    <li> Icon Option</li>
+                                    <li> Icon</li>
+                                    <li> Icon Color</li>
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px;">
+                                    <b>Layout</b>: Choose the Layout for your dashboard item from the 6 available sets i.e Layout 1, Layout 2, Layout 3, Layout 4, Layout 5, Layout 6 as per your requirement.
+                                </div>
+                                <div class="pb-1">
+                                    <div class="col-xs-12">
+                                        <div class="d-flex justify-content-between flex-wrap ">
+                                            <img src="assets/images/layout1.png" alt="layout" class="h-80" style="width: 200px;">
+                                            <img src="assets/images/layout2.png" alt="layout" class="h-80" style="width: 200px;">
+                                            <img src="assets/images/layout3.png" alt="layout" class="h-80" style="width: 200px;">
+                                            <img src="assets/images/layout4.png" alt="layout" class="h-80" style="width: 200px;">
+                                            <img src="assets/images/layout5.png" alt="layout" class="h-80" style="width: 200px;">
+                                            <img src="assets/images/layout6.png" alt="layout" class="h-80" style="width: 200px;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/sale_order2.png"  alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px">
+                                    <b>Theme</b>: It is a pre configured set of 5 different colors i.e White, Blue, Green, Red and Yellow.
+                                </div>
+                                <p>Select the Theme as per your choice. If you wish to choose your own color, you can do the same through Background Color. You can even change the Transparency of the chosen color, you can also change the Font Color of the dashboard item and adjust its Transparency as per your choice.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/sale_order3.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px">
+                                    <b>Icon</b>: We have provided 29 pre-loaded icons of Font Awesome 4.7.0.
+                                </div>
+                                <p>Choose the icon for your dashboard item. If you wish to choose from our Default Icons, choose the Default Icons option and if you wish to upload your own, choose Upload Icon option.</p>
+                                <p>If you have chosen the Default Icons option, the below pop-up window will be displayed. Choose the icon you like and if you wish to explore more icons, search them in the search bar.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/select_icons.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px">
+                                    <b>Icon</b>: Option provided to choose the Icon Color for your dashboard item and adjust the Transparency accordingly.
+                                </div>
+                                <p>See the Preview of your finished dashboard item. If you like what you see, proceed to save the same.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/sale_order4.png" alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on the tile</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display tile to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Tile</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Tile</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="8" class="align-middle text-center">Data</td>
+                                <td>Record Type</td>
+                                <td>Allows you to show your data/record as a Count, Sum or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Field</td>
+                                <td>Allow you to select the field on which to apply the sum or average operation</td>
+                                <td>It will only visible when Record Type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Record Value</td>
+                                <td>Display exact value depending upon selected Record Type and Record Field</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allow you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="6" class="align-middle text-center">Display</td>
+                                <td>Theme</td>
+                                <td>Pre configured set of 5 different colors i.e White, Blue, Green, Red and Yellow. Select the Theme as per your choice</td>
+                                <td>Get overridens if custom values are set in Background Color, Font Color & Icon Color</td>
+                            </tr>
+                            <tr>
+                                <td>Background Color</td>
+                                <td>Allows you to set the background color from a color pop-up window. Also provides option to set transparency.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Font Color</td>
+                                <td>Allows you to set the font color from a color pop-up window. Also provides option to set transparency.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">Icon Option</td>
+                                <td class="p-0">
+                                    <table class="w-100">
+                                       <tr>
+                                           <td>Allows you to choose the icon from a pop-up window.</td>
+                                       </tr>
+                                       <tr>
+                                            <td>Allows you to upload your custom icon.</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="p-0">
+                                    <table class="w-100 text-center">
+                                        <tr>
+                                            <td>Default Icons</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Upload Icon</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Icon</td>
+                                <td>We have provided 29 pre-loaded Default Font Awesome 4.7.0 icons</td>
+                                <td>Use search bar to search for other available Font Awesome icons.</td>
+                            </tr>
+                            <tr>
+                                <td>Icon Color</td>
+                                <td>Allows you to choose the color of the icon. Also, provides option to set transparency.</td>
+                                <td>Only visible when Icon Option chosen as Default</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                            </div>
+                            <div class="tab-pane" id="Advance3">
+                                <h4>Creating a Dashboard Item as a Bar Chart:</h4>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart/bar_chart_preview.png"  alt="tile-item" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px;">
+                                    If you select the Dashboard Item Type as a Bar Chart, three important fields will be displayed on selecting the model i.e
+                                    <li>Measures</li>
+                                    <li>Line Measure</li>
+                                    <li>Data Type</li>
+                                </div>
+
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart.png" alt="tile-item" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px;">
+                                    Measures and Line Measure field will allow the user to select multiple values and corresponding to the selected fields dataset will start displaying for them.
+                                </div>
+                                <p>For example: Let’s select the Model as Sales Order and keep its Measures as Total (sale.order), Taxes (sale.order) and Untaxed Amount(sale.order) and Line Measure as Taxes (sale.order) and Untaxed Amount (sale.order) and Currency Rate (sale.order)</p>
+                                <p>Measures and Line Measure will show list of fields related to the chosen model on the basis of following attributes:
+                                <li> Type: Integer, Float or Monitory</li>
+                                <li>Store: True i.e. this field value must be stored in the database</li>
+                                </p>
+                                <div class="pb-4" style="font-size: 18px;"><b>NOTE: Field name “id” is not allowed to show explicitly.</b></div>
+                                <p>Once you select the Data Type as Sum, Count or Average, it will start displaying the data respectively.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart2.png" alt="domain" class="img-fluid">
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart3.png" alt="domain" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px;">
+                                    You will notice the following configuration options under <b>Group/Dimensions</b> tab.
+                                    <li> Group By</li>
+                                    <li> Sub Group By</li>
+                                    <li> Sort By Field</li>
+                                    <li> Sort Order</li>
+                                    <li> Record Limit</li>
+                                </div>
+                                <div class="pb-4" style="font-size: 18px;">
+                                    <b>NOTE: Group By and Sub Group By field allows you to group your selected Measure field data.</b>
+                                </div>
+                                <div class="pb-4" style="font-size: 18px;">
+                                    While selecting the Group By or Sub Group By field, if you select the field type as <b>Date/Datetime Type</b>, then you will notice a new field start displaying, i.e <b>“ Group By Date/Sub Group By Date ”</b>
+                                </div>
+                                <div class="pb-4" style="font-size: 18px;">
+                                    Group By Date/Sub Group By Date field will allow you to group your data as per the options available.
+                                    <li> Day</li>
+                                    <li> Week</li>
+                                    <li> Month</li>
+                                    <li> Quarter</li>
+                                    <li> Year</li>
+                                </div>
+                                <p>Select the Sub Group By field to further group your Group By field data, for example: let’s select the Group By as Company (sale.order).</p>
+                                <p>You can also select the Sort By Field, Sort Order, and Record Limit option specific to the dashboard item you’re currently making</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart4.png"  alt="" class="img-fluid">
+                                </div>
+                                <p>You also have the feature of defining the Chart Color Palette for your dashboard item under Display tab, there are four predefined options i.e. Default, Cool, Warm and Neon.</p>
+                                <p>The same can also be defined from the main dashboard by clicking at the brush icon named Color Palette on each individual dashboard item whose type is charts.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart5.png" alt="" class="img-fluid">
+                                </div>
+
+                                <div class="pb-4" style="font-size: 18px">
+                                    You can notice that there is another option available besides the Dashboard item preview “Stacked Bar Chart” by checking this box, you can view your data for a Dashboard item as shown below
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart6.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px">
+                                    If you select your Group By field as Date Type, for example: Let’s select the Group By field as a “Creation Date”, you will notice a Target tab will appear besides the Data and Displays tabs.
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart7.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="fon-size: 18px">
+                                    If you click on Target tab, you will be able to see the Enable Target option on activating it, you will notice the new configurations menus to set the Targets for your data as per your need.
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart8.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart9.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-4" style="font-size: 18px">
+                                    If you enable the option, “Show Target as Line”, it will start showing the target as a Line.
+                                </div>
+                                <p>If you input the value for “Standard Target” option, then you will be able to view your Data target as per the input the value, as shown above screenshot.</p>
+                                <p>If you wish to see the target with different data and date range, then you need to add them by clicking on “Add Line”. on clicking the Add Line, you will be asked to select the Date and the value for which you want to see the target.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart10.png" alt="" class="img-fluid">
+                                </div>
+                                <p>You can add multiple lines to see the target values as per your need.</p>
+                                <div class="pb-1">
+                                    <img src="assets/images/bar_chart11.png" alt="" class="img-fluid">
+                                </div>
+                                <p>Once all the mandatory details are filled, you can preview your dashboard item in the Preview column and if everything looks good, then proceed to save.</p>
+
+                                 <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="6" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display Bar Chart to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Bar Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Stacked Bar Chart</td>
+                                <td>Option to convert bar chart in stacked bar chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Bar Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="15" class="align-middle text-center">Data</td>
+                                <td>Measures</td>
+                                <td>Allows you to select the fields for which you want to perform the calculations as per the selected Model</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Line Measure</td>
+                                <td>Allows you to select the fields for which you want to display lines on bar chart</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Type</td>
+                                <td>Allows you to display your data as Sum, Count or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By</td>
+                                <td>Allows you to further group your Group By field data.</td>
+                                <td>Only visible when date/datetime field is chosen in Sub Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the grouped data as per selected date type sub group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>It will only visible when Sub Group By is chosen date time field</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">Display</td>
+                                <td>Chart Color Palette</td>
+                                <td>It will allow you to select the color from 4 pre-defined options i.e Default, Cool, Warm and Neon</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">Target</td>
+                                <td>Enable Target</td>
+                                <td>On enabiling the option, you will be able to see the Target values</td>
+                                <td>Target tab is only visible when Date/Datetime field is selected in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Show Target as Line</td>
+                                <td>Allows you to set your target values which you wish to see as a line on chart.</td>
+                                <td>Visible only when you enables the Enable Target</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Target</td>
+                                <td>Default target value if any value is empty for particular date period</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>Allows you to set the Date on which you wish to see your Target values.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Allows you to set the Target value respective to the date.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                            <div class="tab-pane" id="Advance4">
+                                <h4>Creating a Dashboard Item as a Horizontal Bar Chart:</h4>
+                                <div class="pb-4" style="font-size: 18px;"> If you select the Dashboard Item Type as Horizontal Bar Chart and follow the steps as mentioned above for the Bar Chart, the final result would be displayed as the following:
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/horizontal_bar.png" alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="6" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display Horizontal Bar Chart to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Horizontal Bar Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Stacked Bar Chart</td>
+                                <td>Option to convert Horizontal Bar Chart in stacked bar chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Horizontal Bar Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="15" class="align-middle text-center">Data</td>
+                                <td>Measures</td>
+                                <td>Allows you to select the fields for which you want to perform the calculations as per the selected Model</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Line Measure</td>
+                                <td>Allows you to select the fields for which you want to display lines on bar chart</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Type</td>
+                                <td>Allows you to display your data as Sum, Count or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By</td>
+                                <td>Allows you to further group your Group By field data.</td>
+                                <td>Only visible when date/datetime field is chosen in Sub Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the grouped data as per selected date type sub group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>It will only visible when Sub Group By is chosen date time field</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">Display</td>
+                                <td>Chart Color Palette</td>
+                                <td>It will allow you to select the color from 4 pre-defined options i.e Default, Cool, Warm and Neon</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">Target</td>
+                                <td>Enable Target</td>
+                                <td>On enabiling the option, you will be able to see the Target values</td>
+                                <td>Target tab is only visible when Date/Datetime field is selected in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Show Target as Line</td>
+                                <td>Allows you to set your target values which you wish to see as a line on chart.</td>
+                                <td>Visible only when you enables the Enable Target</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Target</td>
+                                <td>Default target value if any value is empty for particular date period</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>Allows you to set the Date on which you wish to see your Target values.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Allows you to set the Target value respective to the date.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                            <div class="tab-pane" id="Advance5">
+                                <h4>Creating a Dashboard Item as a Line Chart:</h4>
+                                <div class="pb-4" style="font-size: 18px;"> If you select the Dashboard Item Type as Line Chart and follow the steps as mentioned above for the Bar Chart, the final result would be displayed as the following:
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/line.png"alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display Line Chart to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Line Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Line Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="14" class="align-middle text-center">Data</td>
+                                <td>Measures</td>
+                                <td>Allows you to select the fields for which you want to perform the calculations as per the selected Model</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Type</td>
+                                <td>Allows you to display your data as Sum, Count or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By</td>
+                                <td>Allows you to further group your Group By field data.</td>
+                                <td>Only visible when date/datetime field is chosen in Sub Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the grouped data as per selected date type sub group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>It will only visible when Sub Group By is chosen date time field</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">Display</td>
+                                <td>Chart Color Palette</td>
+                                <td>It will allow you to select the color from 4 pre-defined options i.e Default, Cool, Warm and Neon</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4" class="align-middle text-center">Target</td>
+                                <td>Enable Target</td>
+                                <td>On enabiling the option, you will be able to see the Target values</td>
+                                <td>Target tab is only visible when Date/Datetime field is selected in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Target</td>
+                                <td>Default target value if any value is empty for particular date period</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>Allows you to set the Date on which you wish to see your Target values.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Allows you to set the Target value respective to the date.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                            <div class="tab-pane" id="Advance6">
+                                <h4>Creating a Dashboard Item as an Area Chart:</h4>
+                                <div class="pb-4" style="font-size: 18px;"> If you select the Dashboard Item Type as an Area Chart and follow the steps as mentioned above for the Bar Chart, the final result would be displayed as the following:
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/area.png" alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display Area Chart to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Area Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Area Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="14" class="align-middle text-center">Data</td>
+                                <td>Measures</td>
+                                <td>Allows you to select the fields for which you want to perform the calculations as per the selected Model</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Type</td>
+                                <td>Allows you to display your data as Sum, Count or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By</td>
+                                <td>Allows you to further group your Group By field data.</td>
+                                <td>Only visible when date/datetime field is chosen in Sub Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the grouped data as per selected date type sub group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>It will only visible when Sub Group By is chosen date time field</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">Display</td>
+                                <td>Chart Color Palette</td>
+                                <td>It will allow you to select the color from 4 pre-defined options i.e Default, Cool, Warm and Neon</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4" class="align-middle text-center">Target</td>
+                                <td>Enable Target</td>
+                                <td>On enabiling the option, you will be able to see the Target values</td>
+                                <td>Target tab is only visible when Date/Datetime field is selected in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Standard Target</td>
+                                <td>Default target value if any value is empty for particular date period</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Date</td>
+                                <td>Allows you to set the Date on which you wish to see your Target values.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                            <tr>
+                                <td>Value</td>
+                                <td>Allows you to set the Target value respective to the date.</td>
+                                <td>Visible only when you check the Enable Target option</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                            <div class="tab-pane" id="Advance7">
+                                <h4>Creating a Dashboard Item as a Pie Chart:</h4>
+                                <div class="pb-4" style="font-size: 18px;"> If you select the Dashboard Item Type as a Pie Chart and follow the steps as mentioned above for the Bar Chart, the final result would be displayed as the following:
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/pie.png" alt="" class="img-fluid">
+                                </div>
+                                <p>
+                                You will notice one additional feature, Semi Circle Chart checkbox which converts Pie Chart in Semi Pie Chart.<br/>
+                                This is how Semi-Pie Chart look like:
+                            </p>
+                                 <div class="pb-1">
+                                    <img src="assets/images/pie2.png" alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="6" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display Pie Chart to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Pie Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Semi Circle Chart</td>
+                                <td>Option to convert Pie Chart in Semi Pie Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Pie Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="14" class="align-middle text-center">Data</td>
+                                <td>Measures</td>
+                                <td>Allows you to select the fields for which you want to perform the calculations as per the selected Model</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Type</td>
+                                <td>Allows you to display your data as Sum, Count or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By</td>
+                                <td>Allows you to further group your Group By field data.</td>
+                                <td>Only visible when date/datetime field is chosen in Sub Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the grouped data as per selected date type sub group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>It will only visible when Sub Group By is chosen date time field</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">Display</td>
+                                <td>Chart Color Palette</td>
+                                <td>It will allow you to select the color from 4 pre-defined options i.e Default, Cool, Warm and Neon</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                            <div class="tab-pane" id="Advance8">
+                                <h4>Creating a Dashboard Item as a Doughnut Chart:</h4>
+                                <div class="pb-4" style="font-size: 18px;"> If you select the Dashboard Item Type as a Doughnut Chart and follow the steps as mentioned above for the Bar Chart, the final result would be displayed as the following:
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/pie3.png" alt="" class="img-fluid">
+                                </div>
+                                 <p>
+                                    You will notice one additional feature, Semi Circle Chart checkbox which converts Doughnut Chart in Semi Doughnut Chart.<br/>
+                                    This is how Semi-Doughnut Chart look like:
+                                </p>
+                                <div class="pb-1">
+                                    <img src="assets/images/pie4.png" alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="6" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display Doughnut Chart to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Doughnut Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Semi Circle Chart</td>
+                                <td>Option to convert Doughnut Chart in Semi Doughnut Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Doughnut Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="14" class="align-middle text-center">Data</td>
+                                <td>Measures</td>
+                                <td>Allows you to select the fields for which you want to perform the calculations as per the selected Model</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Type</td>
+                                <td>Allows you to display your data as Sum, Count or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By</td>
+                                <td>Allows you to further group your Group By field data.</td>
+                                <td>Only visible when date/datetime field is chosen in Sub Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the grouped data as per selected date type sub group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>It will only visible when Sub Group By is chosen date time field</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">Display</td>
+                                <td>Chart Color Palette</td>
+                                <td>It will allow you to select the color from 4 pre-defined options i.e Default, Cool, Warm and Neon</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                            <div class="tab-pane" id="Advance9">
+                                <h4>Creating a Dashboard Item as a Polar Area Chart:</h4>
+                                <div class="pb-4" style="font-size: 18px;"> If you select the Dashboard Item Type as a Polar Area Chart and follow the steps as mentioned above for the Bar Chart, the final result would be displayed as the following:
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/polar.png" alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display Polar Area Chart to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as Polar Area Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the Polar Area Chart</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="14" class="align-middle text-center">Data</td>
+                                <td>Measures</td>
+                                <td>Allows you to select the fields for which you want to perform the calculations as per the selected Model</td>
+                                <td>Only visible when Data type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Type</td>
+                                <td>Allows you to display your data as Sum, Count or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By</td>
+                                <td>Allows you to further group your Group By field data.</td>
+                                <td>Only visible when date/datetime field is chosen in Sub Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sub Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the grouped data as per selected date type sub group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>It will only visible when Sub Group By is chosen date time field</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">Display</td>
+                                <td>Chart Color Palette</td>
+                                <td>It will allow you to select the color from 4 pre-defined options i.e Default, Cool, Warm and Neon</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                            <!-- <div class="tab-pane" id="Advance10">
+                              <h4>Large buttons for better view</h4>
+                              <div class="pb-4" style="font-size: 18px;">  The buttons are made large enough so that they do not cause any hindrance in the navigation.</div>
+                              <div class="pb-1">
+                                <img src="./img/screensort/font_variation_new.jpg" alt="" class="img-fluid" >
+                              </div>
+                            </div> -->
+                            <div class="tab-pane" id="Advance11">
+                                <h4>Creating a Dashboard Item as a List View:</h4>
+                                <div class="pb-4" style="font-size: 18px;"> If you select the Dashboard Item Type as a List View and follow the steps as mentioned above for the Bar Chart, the final result would be displayed as the following:
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/list_view.png" alt="" class="img-fluid">
+                                </div>
+                                <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on header of item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display List View to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as List View</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the List View</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="12" class="align-middle text-center">Data</td>
+                                <td>List View Type</td>
+                                <td>Allows you to Grouped or Un-Grouped your data with respect to chosen Model</td>
+                            </tr>
+                            <tr>
+                                <td>Fields to show in List</td>
+                                <td>Allows you to select the fileds for which you want to perform the calculations as per the selected Model</td>
+                            </tr>
+                            <tr>
+                                <td>Group By</td>
+                                <td>Allows you to group your selected Measure fields data</td>
+                                <td>Enables Target tab if Date/Datetime field is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Group By Date</td>
+                                <td>Allows you to select the date option by which you wish to group the data as per selected date type group by field. Options are Day, Week, Month, Quarter, Year.</td>
+                                <td>Only visible when date/datetime field is chosen in Group By</td>
+                            </tr>
+                            <tr>
+                                <td>Sort By Field</td>
+                                <td>It will allow you to select the field on which you want to sort the records/Data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Sort Order</td>
+                                <td>Allows you to sort your data in Ascending or Descending order</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Limit</td>
+                                <td>Allows you to set limit to your records/data</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allows you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                        <div class="tab-pane" id="Advance12">
+                                <h4>Creating a Dashboard Item as a KPI:</h4>
+                                <p> You can create some amazing KPI with below comparsion options:<br>
+                                <li> KPI with Target</li>
+                                <li> KPI with Previous Period</li>
+                                <li>KPI with Target and Previous Period</li>
+                                </p>
+                                <div class="pb-1">
+                                    <img src="assets/images/kpi/overview.png"  alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/kpi/data1.png"  alt="" class="img-fluid">
+                                </div>
+                                <p>
+                                You also get a option of additional query using which you can perform different operation using "Data Calculation" field on two result sets along with Target comparison:<br>
+                                <li> None/Comparison</li>
+                                <li> Sum</li>
+                                <li> Ratio</li>
+                                <li> Percentage</li>
+                                </p>
+                                <div class="pb-1">
+                                    <img src="assets/images/kpi/data2.png" alt="" class="img-fluid">
+                                </div>
+                                <p>Under Target Tab, you will get option to see target value as Number or Progressbar like described in below screenshot:</p>
+                                 <div class="pb-1">
+                                    <img src="assets/images/kpi/target_number.png"  alt="" class="img-fluid">
+                                </div>
+                                <div class="pb-1">
+                                    <img src="assets/images/kpi/target_progressbar.png"  alt="" class="img-fluid">
+                                </div>
+                                 <table class="table table-bordered mt-4 table-responsive">
+                        <thead class="text-center bg-light">
+                            <tr>
+                                <th>Category</th>
+                                <th>Label</th>
+                                <th>Description</th>
+                                <th>Condition</th>
+                            </tr>
+                        </thead>
+                        <tbody class="font-14">
+                            <tr>
+                                <td rowspan="5" class="align-middle text-center">General</td>
+                                <td>Name</td>
+                                <td>Label which will be displayed on the tile</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Company</td>
+                                <td>Display KPI to particular company</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Type</td>
+                                <td>Select the type as KPI</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Preview</td>
+                                <td>Live Preview of the KPI</td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="9" class="align-middle text-center">Data</td>
+                                <td>Record Type</td>
+                                <td>Allows you to show your data/record as a Count, Sum or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Field</td>
+                                <td>Allow you to select the field on which to apply the sum or average operation</td>
+                                <td>It will only visible when Record Type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Record Value</td>
+                                <td>Display exact value depending upon selected Record Type and Record Field</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Previous Period</td>
+                                <td>Show/Hide previous period value</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allow you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                            	<td rowspan="9" class="align-middle text-center">Data #2</td>
+                                <td>Model</td>
+                                <td>Select the model/table on which you want to create your item</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Type</td>
+                                <td>Allows you to show your data/record as a Count, Sum or Average</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Record Field</td>
+                                <td>Allow you to select the field on which to apply the sum or average operation</td>
+                                <td>It will only visible when Record Type is Sum or Average</td>
+                            </tr>
+                            <tr>
+                                <td>Data Calculation</td>
+                                <td>4 options for the calculation of Data and Data #2 result set. Options are None, Sum, Ratio, Percentage.</td>
+                                <td>Target value displays only when Sum and Percentage is selected</td>
+                            </tr>
+                            <tr>
+                                <td>Domain</td>
+                                <td>Allow you to add conditions to filter out your Data</td>
+                                <td>This odoo default widget is only availabel in Odoo 11, 12 version. Odoo 10 customer will need technical knowledge to add conditions.</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Field</td>
+                                <td>Field on which date filter will work</td>
+                                <td>Only date fields will be displayed</td>
+                            </tr>
+                            <tr>
+                                <td>Date Filter Selection</td>
+                                <td>Select the Date filter for which you want to filter out the your item records/data </td>
+                                <td>If None option is selected then only Main Dashboard page date filter will work.</td>
+                            </tr>
+                            <tr>
+                                <td>Start Date</td>
+                                <td>Option to set start date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td>End Date</td>
+                                <td>Option to set end date for custom date filter</td>
+                                <td>Only visible when Date filter selection is set to Custom Filter</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="6" class="align-middle text-center">Display</td>
+                                <td>Theme</td>
+                                <td>Pre configured set of 5 different colors i.e White, Blue, Green, Red and Yellow. Select the Theme as per your choice</td>
+                                <td>Get overridens if custom values are set in Background Color, Font Color & Icon Color</td>
+                            </tr>
+                            <tr>
+                                <td>Background Color</td>
+                                <td>Allows you to set the background color from a color pop-up window. Also provides option to set transparency.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Font Color</td>
+                                <td>Allows you to set the font color from a color pop-up window. Also provides option to set transparency.</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">Icon Option</td>
+                                <td class="p-0">
+                                    <table class="w-100">
+                                       <tr>
+                                           <td>Allows you to choose the icon from a pop-up window.</td>
+                                       </tr>
+                                       <tr>
+                                            <td>Allows you to upload your custom icon.</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="p-0">
+                                    <table class="w-100 text-center">
+                                        <tr>
+                                            <td>Default Icons</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Upload Icon</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Icon</td>
+                                <td>We have provided 29 pre-loaded Default Font Awesome 4.7.0 icons</td>
+                                <td>Use search bar to search for other available Font Awesome icons.</td>
+                            </tr>
+                            <tr>
+                                <td>Icon Color</td>
+                                <td>Allows you to choose the color of the icon. Also, provides option to set transparency.</td>
+                                <td>Only visible when Icon Option chosen as Default</td>
+                            </tr>
+
+                            <tr>
+                                <td rowspan="4" class="align-middle text-center">Target</td>
+                                <td>Enable Target</td>
+                                <td>Show/Hide target value</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Standard Target</td>
+                                <td>Target value to be compared</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>View</td>
+                                <td>Allows you to display target value either in number or in progressbar</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                            </div>
+                        <div class="tab-pane" id="Advance13">
+                                <h4>Additional Features: </h4>
+                                <p id="move" class="border-bottom">
+                                <b>1. Move and Duplicate a Dashboard Item:</b></p>
+                                 <p>You can Duplicate or Move any dashboard item from one dashboard to another or within same dashboard by two ways: <br/>
+                                1. Copy icon on item visible on mouseover as described in below screenshot:
+                                </p>
+                                <div class="pb-1">
+                                    <img src="assets/images/features/copy_duplicate_one.png" alt="" class="img-fluid">
+                                </div><br><br>
+                                <p>
+                                        2. Action dropdown with option to Duplicate or Move in Add/Edit screen after item is saved. Clicking the same will reveal two drop-down options to either Duplicate the dashboard item or Move the dashboard item.
+                                    </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/copy_duplicate_two.png" alt="" class="img-fluid">
+                            </div>
+                            <p>
+                                Selecting either of the options will open the Dashboard Item Action pop-up. Proceed by selecting the Action you want to execute i.e. Duplicate and Move, and the destination Dashboard.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/feature1.png" class="img-fluid">
+                            </div>
+                            <p>
+                                The Duplicate Action will duplicate the dashboard item from one dashboard to another or same dashboard.
+                            </p>
+                            <p>
+                                The Move Action will move the dashboard item from one dashboard to another dashboard or same dashboard.
+                            </p>
+                            <p id="resize" class="mt-4 border-bot5om">
+                                <b>2. Resize the Dashboard Item</b>
+                            </p>
+                            <p>
+                                You can resize the dashboard items by clicking on the Edit Layout button from the top right corner of the Dashboard screen by dragging the same horizontally or vertically from their corners as per your need.
+                                <br>
+                                <br>
+                                <b>Note: Tiles can only be resized horizontally.</b>
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/feature2.gif" class="img-fluid">
+                            </div>
+
+                            <p id="lview" class="mt-5 border-bottom">
+                                <b>3. List View for Charts/Tile Data:</b>
+                            </p>
+                            <p>
+                                1. Charts - Click on the info icon present on top right of charts to view the details/list view of charts data, you can even click on charts sections of filter out particular chart data. <br/>
+                                2. Tiles - Click on the tile to see details/list view of the data.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/feature3.gif" class="img-fluid">
+                            </div>
+
+
+                            <p id="export" class="mt-5 border-bottom">
+                                <b>4. Export & Import complete dashboard between different Databases (Admin Access Only)</b>
+                            </p>
+                            <p>
+                                <b>Steps to Export Dashboard </b>
+                            </p>
+                            <p>
+                                1. Login with admin account <br/>2. Go to menu : My Dashboard > Configuration > Dashboards <br/> 3. Select the dashboard record which you want to export <br/> 4. Select "Export Dashboard" option from 'Actions' dropdown <br/> 5. A JSON file will be downloaded with name 'dashboard_ninja.json'.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/export_dashboard.gif" class="img-fluid">
+                            </div>
+                            <p>
+                                <b>Steps to Import Dashboard </b>
+                            </p>
+                            <p>
+                                1. Login with admin account <br/> 2. Go to menu : My Dashboard > Configuration > Dashboards <br/> 3. Click on 'Import Dashboard' button <br/> 4. Select the JSON (dashboard_ninja.json) file exported previously <br/> 5. Dashboard will be imported successfully and you can see in list view of Dashboards
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/import_dashboard.png" class="img-fluid">
+                            </div>
+
+
+                            <p id="uid" class="mt-5 border-bottom">
+                                <b>5. Use of %UID in domain filter to filter logged in User Data</b>
+                            </p>
+                            <p>
+                                If you want to see data of logged In user for particular item, follow below steps:
+                                <br>
+                                <br>
+                                1. Go to edit screen for particular dashboard item<br>
+                                2. Click on 'Domain Filter' <br>
+                                3. In value field, use %UID <br>
+                                4. Click Save
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/uid.gif" class="img-fluid">
+                            </div>
+
+
+                            <p id="refresh" class="mt-5 border-bottom">
+                                <b>6. Auto Refresh</b>
+                            </p>
+                            <p>
+                                Auto refresh feature allows your data to render automatically after configured period of time. You can set the Auto Refresh timer from the Configuration > Dashboards menu available as per your need: None, 15 sec, 30 sec, 45 sec, 1 min, 2 min, 5 min, 10 min.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/refresh.png" class="img-fluid">
+                            </div>
+
+
+                            <p id="comparison" class="mt-5 border-bottom">
+                                <b>7. Target Comparison</b>
+                            </p>
+                            <p>
+                                User can define the target values for the model which they wish to see the comparison.
+                            </p>
+                            <p>
+                                <b>NOTE: Target Comparison is possible for below listed Dashboard items</b>
+                            </p>
+                            <p>
+                                1. Line Chart<br>
+                                2. Bar Chart<br>
+                                3. Horizontal Bar Chart<br>
+                                4. Area Chart<br>
+                                5. KPI
+                            </p>
+                            <p>
+                                If you click on Target tab, you will be able to see the Enable Target option on activating it, you will notice the new configurations menus to set the Targets for your data as per your need.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/bar_chart8.png" class="img-fluid">
+                            </div>
+                            <div class="pb-1">
+                                <img src="assets/images/features/target.png" class="img-fluid">
+                            </div>
+                            <p> If you input the value for “Standard Target” option, then you will be able to view your Data target as per the input the value, as shown above screenshot.
+                                <br>
+                                <br>
+                                If you wish to see the target with different data and date range, then you need to add them by clicking on “Add Line”. on clicking the Add Line, you will be asked to select the Date and the value for which you want to see the target.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/bar_chart10.png" class="img-fluid">
+                            </div>
+                            <p>
+                                You can add multiple lines to see the target values as per your need.
+
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/bar_chart11.png" class="img-fluid">
+                            </div>
+
+                            <p id="edit" class="mt-5 border-bottom">
+                                <b>8. Quick Edit Mode</b>
+                            </p>
+                            <p>
+                                You can easily configure you dashboard on the fly from the Dashboard Screen itself for some important configurations, as shown below
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/quickeedit.png" class="img-fluid">
+                            </div>
+
+                            <p id="parent" class="mt-5 border-bottom">
+                                <b>9. Ability to Edit the Parent Menu of the Dashboard </b>
+                            </p>
+                            <p>
+                                This features provides you an ease to change parent menu of a particular Dashboard even after initial creation of the Dashboard.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/menu_change.png" class="img-fluid">
+                            </div>
+
+
+                            <p id="range" class="mt-5 border-bottom">
+                                <b>10. Dynamic Date Filter Range</b>
+                            </p>
+                            <p>
+                                Total 15 Date Filter options are provided to filter out your data as per your need.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/date_filter.png" class="img-fluid">
+                            </div>
+
+                            <p id="remove" class="mt-5 border-bottom">
+                                <b>11. Remove the Dashboard Item</b>
+                            </p>
+                            <p>
+                                You can easily remove the dashboard item by clicking on the remove item button from the dashboard item itself.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/remove_item.png" class="img-fluid">
+                            </div>
+
+                            <p id="" class="mt-5 border-bottom">
+                                <b>12. Color Palette</b>
+                            </p>
+                            <p>
+                                This feature allows a user to change dashboard item’s color on the fly from the dashboard item itself.
+                            </p>
+                            <div class="pb-1">
+                                <img src="assets/images/features/color_palette.png" class="img-fluid">
+                            </div>
+
+                        </div>
+
+                    <div class="tab-pane" id="Advance14">
+                        <h4>Dashboard Ninja Configurations</h4>
+                        <p>
+                        You can configure your Dashboards from the My Dashboards > Configuration > Dashboards menu as shown below:
+                    </p>
+                    <div class="pb-1">
+                        <img src="assets/images/configuration.png" class="img-fluid">
+                    </div>
+                    <p>
+                        On clicking the Dashboards menu, you will be able to see the below screen:
+                    </p>
+                    <div class="pb-1">
+                        <img src="assets/images/configuration_list.png" class="img-fluid">
+                    </div>
+                    <p>
+                        You can activate and deactivate a customized dashboard by checking and unchecking the box respectively
+                    </p>
+                    <p>
+                        While creating a dashboard, you will have the option of selecting the dashboard layout from 3 Pre-defined layout templates and Preconfigured Sales Dashboard.
+                    </p>
+                    <p>
+                        If you want your dashboard data to get auto refreshed after some interval, set value for 'Update Inverval' for particular dashboard.
+                    </p>
+                    <div class="pb-1">
+                        <img src="assets/images/update_interval.gif" class="img-fluid">
+                    </div>
+                    <p>
+                        Group Access option allows us to set groups permission who can access the selected dashboard.
+                    </p>
+                    <div class="pb-1">
+                        <img src="assets/images/features/group_access.png" class="img-fluid">
+                    </div>
+
+                    </div>
+
+                    <div class="tab-pane" id="Advance15">
+                        <h4 class="mb-4">Dashboard Ninja Advance Features</h4>
+                    <p id="palette" class="mt-5 border-bottom">
+                        <b>1. TV Dashboard</b>
+                    </p>
+                    <p>The Dashboard Ninja Advance has come up with a TV Dashboard feature to display your curated dashboards on the TV screens. Go to ‘’My dashboard’’ section, and click on the ‘’Play’’ button at the top right corner of the page as displayed below:  </p>
+                     <div class="pb-1">
+                        <img src="assets/images/additional-features/dashboard-kappso-web-4.png" class="img-fluid">
+                    </div>
+                    <p>With this feature, you can get the complete view of the listed items in the slide view format, with every slide showing the detail of every item.</p>
+                    <div class="pb-1">
+                        <img src="assets/images/additional-features/dashboard-kappso-web-3.png" class="img-fluid">
+                    </div>
+                    <div><h4>Display Complex Analytics</h4><div>
+                    <p  class="mt-5 border-bottom">
+                        <b>2. Create/Edit query on your own</b>
+                    </p>
+                    <p>In the Dashboard Ninja Advance, you can create an item using SQL query thus allowing their users to create dashboard items with more complex data. For example, users can create dashboard items to show data from computation of different odoo model fields or to show data from multiple odoo models in one item. You can create the following 8 items by SQL query: Bar chart, Horizontal bar chart, Doughnut chart, Pie chart, Line chart, Area chart, Polar area chart and List view.</p>
+                    <p  class="mt-5 border-bottom">
+                        <b>2.a. Chart Items using custom queries</b>
+                    </p>
+                    <p>Go to the ‘’My Dashboard’’ menu, click on ''Add'' button, select any type of charts from the item list and select the data calculation type as ‘’Query’’. In the Query section, add a custom query as per your requirement. </p>
+                    <div class="pb-1">
+                        <img src="assets/images/additional-features/dashboard-kappso-web-2.png" class="img-fluid">
+                    </div>
+                    <p  class="mt-5 border-bottom">
+                        <b>2.b. List view using custom queries</b>
+                    </p>
+                    <p>Go to the ‘’My Dashboard ’menu’, click on ''Add'' button, select the type ‘’List view’’ from the item list and select the data calculation type as ‘’Query’’. In the Query section, add a custom query as per your requirement.
+                    <div class="pb-1">
+                        <img src="assets/images/additional-features/dashboard-kappso-web-1.png" class="img-fluid">
+                    </div>
+                    </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="Advance16">
+                        <h4>Odoo.Sh Installation Steps</h4>
+                        <p id="Steps" class="mt-5 border-bottom">
+                        <b>Steps</b>
+                    </p>
+                    <p>1. Please commit/push Dashboard Ninja and Dashboard Ninja Advance code on GitHub which is associated with odoo.sh.</p>
+                    <p>2. Login to the odoo.sh and click on that branch on which you have commit Dashboard Ninja and Dashboard Ninja Advance code.</p>
+                    <p>3. Click on the connect button then go to the app search for the Dashboard Ninja and Dashboard Ninja Advance app and click on the install button.</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+    </div>
+        </div>
+            <div class="tab-pane fade" id="Release">
+                <section class="card mb-5" style="border: none;">
+                    <div class="card-body pb-5 active">
+                        <div class="text-center pb-5 pt-4">
+                            <h2 style="font-weight: 600; font-size: 2.5rem;">Our Releases</h2>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-sm-8 col-xl-6 mx-auto">
+                                <span style="background-color: #203038;width:4px;height:100%;top: 0;left: 55px;"></span>
+                                <div class="pb-3">
+                                    <div class=""
+                                         style="background-color: #203038;top: 50%;min-width: 65px; left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff;border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">18th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">September, 2020 </span>
+                                    </div>
+                                    <div style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Latest Release 1.0.8</h3>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;top:-2px;">■ </span>
+                                                Feature - Apply Dashboard Date filter on the Query item too.
+                                            </p>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;top:-2px;">■ </span>
+                                                Minor code changes related to Group field.
+                                            </p>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;top:-2px;">■ </span>
+                                                Minor code changes related to the x-label field in query type items.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pb-3">
+                                    <div class=""
+                                         style="background-color: #203038;top: 50%;min-width: 65px; left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff;border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">18th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">May, 2020 </span>
+                                    </div>
+                                    <div style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Release 1.0.7</h3>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;top:-2px;">■ </span>
+                                                Fix - Tile and KPI item resize issue after quick customize the items.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pb-3" >
+                                    <div style="background-color: #203038;top: 50%;min-width: 65px;left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff; border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">7th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">May, 2020 </span>
+                                    </div>
+                                    <div style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Release 1.0.6</h3>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;">■ </span>
+                                                Improvement - Date field data is show in date format instead of the DateTime format in the ungrouped list view.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3" >
+                                    <div style="background-color: #203038;top: 50%;min-width: 65px;left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff; border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">20th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">April, 2020 </span>
+                                    </div>
+                                    <div style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Release 1.0.5</h3>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;">■ </span>
+                                                Code optimization of list view functionality.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3" >
+                                    <div style="background-color: #203038;top: 50%;min-width: 65px;left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff; border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">6th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">April, 2020 </span>
+                                    </div>
+                                    <div style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Release 1.0.3</h3>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;">■ </span>
+                                                Minor code changes in item from view.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3" >
+                                    <div style="background-color: #203038;top: 50%;min-width: 65px;left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff; border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">9th</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">March, 2020 </span>
+                                    </div>
+                                    <div style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Release 1.0.2</h3>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;">■ </span>
+                                                Fix - Rtl related css issue.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pb-3" >
+                                    <div style="background-color: #203038;top: 50%;min-width: 65px;left: 0;box-sizing: border-box;padding: 10px;text-align: center; color: #fff; border-top-left-radius: 5px;border-bottom-left-radius: 5px;">
+                                        <span style="font-size: 20px; font-weight: 700;display: block;">31st</span>
+                                        <span style="display: block;font-size: 0.8em;text-transform: uppercase;">January, 2020 </span>
+                                    </div>
+                                    <div style="padding: 1.5rem 2rem;border-top-right-radius: 10px;box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);background-color: #fff;border-bottom-right-radius: 10px;">
+                                        <div class="timeline__content">
+                                            <h3 style="font-weight: 400; margin-bottom:20px">Release 1.0.1</h3>
+                                            <p style="color:#666; margin-bottom: 10px;"><span
+                                                    style="font-size:12px;">■ </span>
+                                                Fix - Order sequence of list view column when using custom query.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="tab-pane fade" id="FAQ">
+                <div class="card-body p-0">
+                    <div class="text-center pb-5">
+                        <h2 style="color: #0b3b52; font-weight: 600; font-size: 2.5rem;">Frequently Asked Question</h2>
+                    </div>
+                    <div class="s_faq mx-2 mx-md-5 mb-5">
+                        <div id="accordion">
+                            <div class="card shadow mb-4" style="border: none; border-left: 10px solid #203038;">
+                                <div class="card-header py-4 pl-4 pr-5 bg-white position-relative d-flex justify-content-between"
+                                     style="border: none;">
+                                    <div class="pr-5" style="font-size: 1.6rem; font-weight: 600; color: #0b3b52;">Is this app compatible with Odoo Enterprise?
+                                    </div>
+                                    <a class="card-link" data-toggle="collapse" href="#faqOne" style="
+                      width: 48px;
+                      height: 40px;
+                      line-height: 11px;
+                      background-color: rgba(8, 101, 99, 0.1);
+                      border-radius: 2px;
+                      padding: 0;
+                      font-size: 24px;"></a>
+                                </div>
+                                <div id="faqOne" class="collapse show" data-parent="#accordion">
+                                    <div class="card-body pt-0 pl-4">
+                                        <div style="font-size: 1.4rem; color: #0b3b52;">
+                                              Yes, our app works with Odoo Enterprise as well as Community.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4" style="border: none; border-left: 10px solid #203038;">
+                                <div class="card-header py-4 pl-4 pr-5 bg-white position-relative d-flex justify-content-between"
+                                     style="border: none;">
+                                    <div class="pr-5" style="font-size: 1.6rem; font-weight: 600; color: #0b3b52;">Need some customization in this app, whom to contact?
+                                    </div>
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#faqTwo" style="
+                      width: 48px;
+                      height: 40px;
+                      line-height: 11px;
+                      background-color: rgba(8, 101, 99, 0.1);
+                      border-radius: 2px;
+                      padding: 0;
+                      font-size: 24px;"></a>
+                                </div>
+                                <div id="faqTwo" class="collapse" data-parent="#accordion">
+                                    <div class="card-body pt-0 pl-4">
+                                        <div style="font-size: 1.4rem; color: #0b3b52;">
+                                            Please drop email at sales@ksolves.com or raise a ticket through Odoo store itself.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4" style="border: none; border-left: 10px solid #203038;">
+                                <div class="card-header py-4 pl-4 pr-5 bg-white position-relative d-flex justify-content-between"
+                                     style="border: none;">
+                                    <div class="pr-5" style="font-size: 1.6rem; font-weight: 600; color: #0b3b52;">Do you
+                                            provide any free support?
+                                    </div>
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#faqThree" style="
+                      width: 48px;
+                      height: 40px;
+                      line-height: 11px;
+                      background-color: rgba(8, 101, 99, 0.1);
+                      border-radius: 2px;
+                      padding: 0;
+                      font-size: 24px;"></a>
+                                </div>
+                                <div id="faqThree" class="collapse" data-parent="#accordion">
+                                    <div class="card-body pt-0 pl-4">
+                                        <div style="font-size: 1.4rem; color: #0b3b52;">
+                                             Yes, we do provide free support for 90 days for any queries or any bug/issue fixing.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card shadow mb-4" style="border: none; border-left: 10px solid #203038;">
+                                <div class="card-header py-4 pl-4 pr-5 bg-white position-relative d-flex justify-content-between"
+                                     style="border: none;">
+                                    <div class="pr-5" style="font-size: 1.6rem; font-weight: 600; color: #0b3b52;">Is it possible to create Dashboard item from data of two or more models
+                                    </div>
+                                    <a class="card-link collapsed" data-toggle="collapse" href="#faqFour" style="
+                      width: 54px;
+                      height: 40px;
+                      line-height: 11px;
+                      background-color: rgba(8, 101, 99, 0.1);
+                      border-radius: 2px;
+                      padding: 0;
+                      font-size: 24px;"></a>
+                                </div>
+                                <div id="faqFour" class="collapse" data-parent="#accordion">
+                                    <div class="card-body pt-0 pl-4">
+                                        <div style="font-size: 1.4rem; color: #0b3b52;">
+                                             Yes, It is possible to create Dashboard item from data of two different models with Sql Query feature
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                                                   </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="card shadow-sm mb-5">
+        <div class="card-body text-center text-white p-0">
+            <div class="py-5 px-4" style="background-color:#0b3b52">
+                <div class="mb-4" style="font-size: 2rem;">FREE 90 DAYS SUPPORT</div>
+                <div class="px-md-4 px-md-5 mx-md-5">
+                    <p>Ksolves will provide FREE 90 days support for any doubt, queries, and bug fixing (excluding data
+                        recovery) or any type of issues related to this module. This is applicable from the date of
+                        purchase.</p>
+                    <!--                <a href="https://themekernel.kappso.com/web/demo_login" class="btn py-2 px-5 mt-3"-->
+                    <!--                   style="background-color: #e6ecf5; color: #416AA6; border-radius: 80px; font-weight: 600;">Free Demo</a>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mb-5">
+        <div class="text-center p-2 d-flex justify-content-center align-items-center col-lg-9" style="background-color: #0b3b52;
+            box-shadow: 1px 2px 11px rgba(0, 0, 0, 0), 1px 11px 12px rgba(0, 0, 0, 0.22);margin: auto;">
+            <h3 class="font-weight-bold mb-0 mr-3 text-light">Note: </h3>
+            <h5 class="mb-0 text-light" style="margin-top: 2px;">
+                Extensively Tested on Odoo Vanilla with Ubuntu OS
+            </h5>
+        </div>
+    </section>
+
+    <!-- Popular Apps -->
+    <div class="row pb-sm-5">
+        <h2 class="w-100 text-center mb-3" style="font-weight: 400;">Ksolves Suggested Apps</h2>
+        <div class="text-center w-100 mb-1">
+            <img src="images/line.png" alt="ksolves">
+        </div>
+        <div id="demo" class="carousel slide pb-5 col-12 col-lg-8 mx-auto" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" style="background-color: #9d7092;" data-slide-to="0"
+                    class="active"></li>
+                <li data-target="#demo" style="background-color: #9d7092;" data-slide-to="1"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner pt-4 pt-lg-5 ">
+                <div class="carousel-item px-4 active">
+                    <div class="row pb-sm-4 no-lg-gutters">
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/themes/13.0/ks_theme_kinetik/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/kinetik.png" alt="Kinetik">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Theme Kinetik</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_list_view_manager/"
+                               target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/list-view-manager.png" alt="list-view-manager">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">List
+                                        View <br> Manager</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_sticky_pivot_view/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/sticky-pivot-view.png" alt="sticky-pivot-view">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Sticky <br>Pivot View</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/11.0/ks_oneclick_sale_purchase/"
+                               target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/one-click-sale.png" alt="list-view-manager">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">One
+                                        Click <br>Sale/Purchase</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row pt-3 pb-4 no-gutters">
+
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_theme_base/" target="_blank"
+                               style="text-decoration: none;">
+                                <img src="images/app-logo/ksolves-theme-base.png" alt="ksolves-theme-base">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Ksolves <br>Theme Base</h5>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_pos_order_notes/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/pos-per-item.png" alt="pos-per-item">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">POS
+                                        Per Item <br>& Order Note</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://www.odoo.com/apps/modules/12.0/ks_sales_subscription/"
+                               target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/subscription_icon.png"
+                                     alt="Subscription" style="width: 110px;margin-top: -10px;">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Sales Subscription</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/13.0/ks_custom_report/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/reportmate.png"
+                                     alt="listview_sticky_header">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">ReportMate</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item px-4">
+                    <div class="row pb-sm-4 no-gutters">
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/13.0/ks_woocommerce/"
+                               target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/woocommerce_icon.png"
+                                     alt="woo commerce odoo Connecter">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Odoo WooCommerce Connector
+                                    </h5>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://www.odoo.com/apps/modules/13.0/ks_leaderboard/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/leaderboard.png" alt="Leaderboard Ninja">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Leaderboard Ninja</h5>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_chat_edit_and_delete/"
+                               target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/chat_edit_and_delete.png"
+                                     alt="chat_edit_and_delete">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Odoo
+                                        Chat <br>Edit/Delete</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_office365_contacts/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/office365_contact.png" alt="Office365 Contacts">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Office 365<br>Contacts</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row pt-3 pb-4 no-gutters">
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/13.0/ks_product_variant_extra_price/"
+                               target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/pvep.png" alt="product_variant_extra_price">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Product Variant <br>Extra Price</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_toggle_switch/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/toggle_switch.png" alt="toggle_switch">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">
+                                        Toggle <br>Switch</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/odoo_paytm_gateway/"
+                               target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/odoo_paytm_gateway.png" alt="odoo_paytm_gateway">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Odoo
+                                        Paytm <br>Gateway</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-sm-3 text-center">
+                            <a href="https://apps.odoo.com/apps/modules/12.0/ks_low_stock_alert/"
+                               class="d-block" target="_blank" style="text-decoration: none;">
+                                <img src="images/app-logo/low_stock_alert.png" alt="low_stock_alert">
+                                <div class="card-body text-center p-0 mt-3 mb-3 mb-lg-0">
+                                    <h5 class="card-text m-0" style="font-size: 16px; font-weight: 600">Low
+                                        Stock<br>Alert</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev" style="left: -5%; width: 60px;">
+                <i class="fa fa-angle-left" style="font-size: 5vw;color: #333;"></i>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next"
+               style="right: -5%; width: 60px;">
+                <i class="fa fa-angle-right" style="font-size: 5vw;color: #333;"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Ksolves Odoo Services -->
+    <div class="row pb-sm-5 px-1 pb-4">
+        <h2 class="w-100 text-center my-3" style="font-weight: 400;">Ksolves Odoo Services</h2>
+        <div class="text-center w-100 mb-4">
+            <img src="images/line.png" alt="ksolves">
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center bg-info" style="min-height: 90px;">
+                <div class="pt-4">
+                    <img src="images/support.png" alt="support">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Implementation</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #2ebeb4">
+                <div class="pt-4">
+                    <img src="images/apps.png" alt="apps">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Community Apps</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px;background-color: #00a393; background-color: #98b1c4; ">
+                <div class="pt-4">
+                    <img src="images/support2.png" alt="support2">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Support &amp; Maintenance</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #2f4e6f;">
+                <div class="pt-4">
+                    <img src="images/custom.png" alt="custom">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Customization</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center" style="min-height: 90px; background-color: #f89c24;">
+                <div class="pt-4">
+                    <img src="images/integrated.png" alt="integrated">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Integration Services</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4" style="margin-bottom: 20px;">
+            <div class="card text-center bg-primary" style="min-height: 90px;">
+                <div class="pt-4">
+                    <img src="images/develop.png" alt="develop">
+                </div>
+                <div class="px-3 pt-3 pb-2">
+                    <h5 class="card-title text-white" style="font-size: 19px; font-weight: 400;">Odoo Developer Outsourcing</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ksolves Footer -->
+    <div>
+        <div class="row mx-0 justify-content-sm-between justify-content-center"
+             style="border-top: 1px solid black;">
+            <div class="mb-sm-0 mb-3">
+                <i class="fa fa-envelope fa-2x"
+                   style=" margin-right: 10px; color: #333;  transform: translateY(3px);"></i>
+                <span style="font-size: 18px;">sales@ksolves.com</span>
+            </div>
+            <div class="d-none d-sm-block">
+                <div class="bg-white" style="width: 50px;height: 1px;margin-top: -1px"></div>
+                <div style="border-right: 1px solid black;height: 50px;transform: translateX(-50%);"></div>
+            </div>
+            <div>
+                <i class="fa fa-mobile fa-2x"
+                   style="margin-right: 10px;color: #333;transform: translateY(4px) scale(1.2);"></i>
+                <span style="font-size: 18px;">+91 120-4299799‬</span>
+            </div>
+        </div>
+    </div>
+    <!-- container End -->
+</div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

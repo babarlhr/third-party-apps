@@ -1,0 +1,19 @@
+<odoo>
+    <template id="ks_assets_backend" name="Ks Tv MyDashboard assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" href="/ks_dn_advance/static/src/css/ks_tv_dashboard.css"/>
+            <link rel="stylesheet" href="/ks_dn_advance/static/lib/css/owl.carousel.min.css"/>
+            <script type="text/javascript" src="/ks_dn_advance/static/src/js/ks_labels.js"/>
+            <script type="text/javascript" src="/ks_dn_advance/static/src/js/ks_ylabels.js"/>
+            <script type="text/javascript" src="/ks_dn_advance/static/src/js/ks_dashboard_ninja_tv_graph_preview.js"/>
+            <script type="text/javascript" src="/ks_dn_advance/static/src/js/ks_dashboard_ninja_tv_list_preview.js"/>
+            <script type="text/javascript" src="/ks_dn_advance/static/src/js/ks_tv_dashboard.js"/>
+            <script type="text/javascript" src="/ks_dn_advance/static/lib/js/owl.carousel.min.js"/>
+        </xpath>
+    </template>
+    <template id="ks_front_end" name="Ks Tv Website MyDashboard assets" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+             <script type="text/javascript" src="/ks_dn_advance/static/src/js/ks_website_dashboard.js"/>
+        </xpath>
+    </template>
+</odoo>
