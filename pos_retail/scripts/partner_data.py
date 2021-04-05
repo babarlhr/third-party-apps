@@ -27,6 +27,6 @@ for i in range(0, 100):
         'email': u'customer_big_data@gmail.com',
     }
     partner_id = models.execute_kw(database, uid, password, 'res.partner', 'create', [vals])
-    print i
+    print(i)
 
 

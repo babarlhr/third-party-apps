@@ -27,4 +27,4 @@ for i in range(0, 100):
         'available_in_pos': True,
     }
     product_id = models.execute_kw(database, uid, password, 'product.product', 'create', [vals])
-    print i
+    print(i)
