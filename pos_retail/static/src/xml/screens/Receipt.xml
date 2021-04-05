@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="ReceiptScreenWidget">
+        <t t-jquery="span[class*='next']" t-operation="replace">
+            <span class='button next'>
+                Next Order
+                <span class="keyboard-shortcut">Enter</span>
+            </span>
+        </t>
+        <t t-jquery="div[class*='print']" t-operation="replace">
+            <div class="button print">
+                <i class='fa fa-print'></i> Print Receipt
+                <span class="keyboard-shortcut">P</span>
+            </div>
+        </t>
+
+    </t>
+
+</templates>

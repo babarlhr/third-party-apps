@@ -1,0 +1,77 @@
+.pos .color_box {
+    position: absolute;
+    right: 290px;
+    top: -5px;
+    background: #f1f1f2;
+    font-size: 16px;
+}
+.pos .color_box input {
+    width: 140px;
+    border: 1px solid #cecbcb;
+    padding: 10px 20px;
+    margin: 6px;
+    border-radius: 3px;
+    font-family: $font_family_pos;
+    font-size: 13px;
+    min-height: 20px !important;
+    min-width: 50px !important;
+    font-size: 16px !important;
+    text-align: center;
+}
+
+.pos .fontsize_box {
+    position: absolute;
+    right: 410px;
+}
+
+.pos .fontsize_box input {
+    border: 1px solid #cecbcb;
+    padding: 10px 20px;
+    margin: 6px;
+    border-radius: 3px;
+    font-family: $font_family_pos;
+    font-size: 13px;
+    min-height: 20px !important;
+    min-width: 50px !important;
+    font-size: 16px !important;
+    text-align: center;
+}
+.pos .element-selected {
+    background: #6EC89B !important;
+    border: 2px dashed #c80a1d;
+}
+.pos .ready-design-ui {
+    border: 1px dashed #6ec89b;
+    cursor: pointer !important;
+}
+
+.pos .design-widget {
+    z-index: 1000;
+    max-width: 250px;
+    background: gray;
+}
+.pos .design-widget li{
+    margin-bottom: 5px;
+    background: gray;
+}
+.pos .design-widget .button {
+    background: none;
+    margin: 10px;
+}
+.pos .design-widget .category {
+    text-transform: uppercase;
+    color: #000;
+    background: gray;
+}
+.pos .design-widget input {
+    min-height: 30px;
+    text-align: center;
+    min-width: 180px;
+    margin-left: 30px;
+}
+.pos .design-widget .form-control {
+    width: 180px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 30px;
+}

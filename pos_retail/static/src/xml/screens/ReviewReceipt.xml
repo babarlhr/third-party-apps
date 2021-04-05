@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="ReviewReceiptScreen">
+        <div class='receipt-screen screen'>
+            <div class='full_width screen-content'>
+                <div class='top-content'>
+                    <span class='button back'>
+                        Back
+                    </span>
+                    <!--
+                    <span class="button save_design_ui" style="right: 20%">
+                        <i class="fa fa-save"></i>
+                        Save Bill
+                    </span>
+                    <span class="button drop" style="right: 35%">
+                        <i class="fa fa-trash"></i>
+                        Drop
+                    </span>
+                    <span class="button undo highlight" style="left: 20%">
+                        <i class="fa fa-undo"></i>
+                        Undo
+                    </span>
+                    <span class="button next edit highlight"><i class="fa fa-edit"/> Edit Bill</span>
+                    -->
+                </div>
+                <div class="centered-content touch-scrollable">
+                    <div class="button print">
+                        <i class="fa fa-print"></i> Print Receipt
+                    </div>
+                    <div class="pos-receipt-container">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="PrintBillBeforePaidWidget">
+        <div class="oe_status js_synch review-receipt" title="Print Bill">
+            <div class="js_connected oe_icon oe_green">
+                <i class='fa fa-fw fa-print' role="img" aria-label="Print Bill without Payment" title="Print Bill without Payment"></i>
+                <span class="keyboard-shortcut">F8</span>
+            </div>
+        </div>
+    </t>
+
+</templates>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="Chrome">
+        <t t-jquery="img[class*='pos-logo']" t-operation="replace"/>
+    </t>
+
+    <t t-name="VisibilityOeStatus">
+        <div class="oe_status visibility_status">
+            <a class="oe_green" title="Visible Header Buttons" href="javascript:void(0)">
+                <i class="material-icons">keyboard_arrow_right</i>
+            </a>
+        </div>
+    </t>
+
+    <t t-name="OpenApps">
+        <div class="oe_status" style="background: #ff5200" title="Open Applications">
+            <i class="material-icons">apps</i>
+            <span class="keyboard-shortcut">G</span>
+        </div>
+    </t>
+
+</templates>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+
+        <record id="pos_cache_config_tree" model="ir.ui.view">
+            <field name="name">pos.cache.config.tree</field>
+            <field name="model">pos.cache.config</field>
+            <field name="arch" type="xml">
+                <tree string="Turbo Databse">
+                    <field name="config_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="pos_cache_config_form" model="ir.ui.view">
+            <field name="name">pos.cache.config.form</field>
+            <field name="model">pos.cache.config</field>
+            <field name="arch" type="xml">
+                <form string="Turbo Databse">
+                    <group>
+                        <field name="config_id"/>
+                        <field name="json_datas"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="pos_cache_config_search" model="ir.ui.view">
+            <field name="name">pos.cache.config.filter</field>
+            <field name="model">pos.cache.config</field>
+            <field name="arch" type="xml">
+                <search string="Turbo Database">
+                    <field name="config_id"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_pos_cache_config">
+            <field name="name">Turbo Databses</field>
+            <field name="res_model">pos.cache.config</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_action_pos_cache_config"
+                  parent="menu_master_data"
+                  sequence="103"
+                  action="action_pos_cache_config"
+        />
+
+    </data>
+</odoo>
