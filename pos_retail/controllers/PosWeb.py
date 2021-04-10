@@ -95,7 +95,7 @@ class pos_controller(PosController):
         request.env.cr.execute("select count(id) from res_partner")
         count_partners = request.env.cr.fetchall()
         session_info['model_ids']['res.partner']['count'] = count_partners[0][0] if len(count_partners) == 1 else None
-        session_info['user_context']['allowed_company_ids'] = pos_session.company_id.ids
+        session_info['user_context']['pos_session_company_ids'] = pos_session.company_id.ids
         session_info['company_currency_id'] = request.env.user.company_id.currency_id.id
         session_info['big_datas_turbo'] = pos_session.config_id.big_datas_turbo
         session_info['license'] = request.env['ir.config_parameter'].sudo().get_param('license')
